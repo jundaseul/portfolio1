@@ -1,0 +1,532 @@
+@charset "utf-8";
+/* main.css - 메인페이지 CSS */
+
+/* 파일 merging(합치기) */
+@import url(reset.css);
+@import url(core.css);
+@import url(common.css);
+@import url(gridSetFlex.css);
+@import url(gridView.css);
+
+/***************************************************************검수용이미지********************************************************************/
+.vi{
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: .5;
+    display: none;
+}
+
+/*각 페이지영역별 비율 셋팅*/
+
+#ban.rbx::before{
+    padding-top: 45%;
+}
+#cont_1.rbx::before{
+    padding-top: 48%;
+}
+#cont_2.rbx::before{
+    padding-top: 51%;
+}
+#cont_3.rbx::before{
+    padding-top: 51%;
+}
+#cont_4.rbx::before{
+    padding-top: 28%;
+}
+
+
+/*메인 페이지 디자인전용*/
+
+/***************************************************************배너영역********************************************************************/
+
+.ban .inbox{    
+    position: relative;
+    width: 100%;
+    /*비율유지박스는 height값 설정을 하지않는다!*/
+    overflow: hidden;
+}
+
+/*배너슬라이드*/
+.slide{
+    position: relative;
+    left: 0;
+    width: 500%;/*5장*/
+    height: 100%;
+    display: flex;
+}
+.slide li{
+    position: relative;
+    /*버튼의 부모*/
+    width: 20%;
+    height: 100%;
+}
+/*배너이미지 반투명박스*/
+.slide li::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.slide li:hover::before{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slide li.s1{
+    background: url(../images/ban_01.jpg) no-repeat center/cover;
+}
+.slide li.s2{
+    background: url(../images/ban_01.jpg) no-repeat center/cover;
+}
+.slide li.s3{
+    background: url(../images/ban_01.jpg) no-repeat center/cover;
+}
+.slide li.s4{
+    background: url(../images/ban_01.jpg) no-repeat center/cover;
+}
+.slide li.s5{
+    background: url(../images/ban_01.jpg) no-repeat center/cover;
+}
+
+/*view버튼*/
+.ban .view_btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity .4s;
+    z-index: 1;
+}
+.ban:hover .view_btn{
+    opacity: 10;
+}
+/*마우스 오버시 배너이미지 확대*/
+.zoom {
+   /*transition: transform .4s;
+    overflow: hidden;*/
+    transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transition: all 0.4s ease-in-out;
+    overflow: hidden;
+}
+.zoom:hover {
+   /*-ms-transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1); */  
+    transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+/*이동버튼*/
+.bbtn{
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+.lbtn{
+    margin-right: 32px;
+}
+
+
+
+
+/*************************************************************** 컨텐츠영역(1)-magazine*********************************************************/
+
+.cont_1{
+    margin: 3% 0;
+}
+.cont_1 ul.fbx{    
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.cont_1 ul.fbx li:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.magazine_left{    
+    padding-left: 10px;
+    text-align: center;
+}
+.magazine_left h3{
+    font-family: 'Noto Sans KR';
+    font-size: 2.8125rem;
+    font-weight: bold;
+    letter-spacing: -0.1px;
+    height: 70px;
+    position: relative;
+}
+
+.magazine_left>h3::after{
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35px;
+    height: 1px;
+    background-color: #666;
+}
+
+.magazine_left>p{
+    font-style: italic;
+    font-size: 1.5625rem;
+    line-height: 34px;
+    letter-spacing: -0.8px;
+    font-weight: 300;
+    padding-top: 18px;
+}
+.btn_show{
+    position: relative;
+    white-space: nowrap;/*줄바꿈방지*/
+    margin-top: 80%;
+    margin-left: 7%;
+}
+.btn_show span{
+    position: relative;
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #ece4d0;
+}
+.btn_show img{
+    position: absolute;
+    top: 30px;
+    left: 27px;
+}
+.btn_show p{
+    font-family: 'Noto Sans KR';
+    position: absolute;
+    
+    letter-spacing: -0.6px;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 100;
+    bottom: 19px;
+    left: 55px;
+}
+
+/*버튼 호버*/
+.btn_show.magazine:hover{
+    width: 274px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #ece4d0;
+}
+
+/*magazine-우측*/
+.magazine_right{
+    width: 125%;
+    height: 100%;
+}
+
+ul.magazine_img{
+    position: relative;
+    left: 0;
+    display: flex;
+    width: 300%;/*2개씩 3파트*/
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.magazine_img.slide li::before{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.magazine_img.slide li:hover::before{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.magazine_img li{
+    width: 15.666%;
+    margin: 0 .3%;/*양쪽합해 1%가 width 크기에서 빠짐*/
+    /*5개지만 3세트로 생각하여 6개크기로 설정!*/
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*view버튼의 부모*/
+}
+
+/*************view버튼 세팅******************/
+.view_btn.magazine{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.magazine_img li:nth-child(1){
+    background-image: url(../images/magazine_1.jpg);
+    position: relative;
+}
+
+.magazine_img li:nth-child(2){
+    background-image: url(../images/magazine_2.jpg);
+}
+
+.magazine_img li:nth-child(3){
+    background-image: url(../images/magazine_3.jpg);
+}
+
+.magazine_img li:nth-child(4){
+    background-image: url(../images/magazine_3.jpg);
+}
+
+.magazine_img li:nth-child(5){
+    background-image: url(../images/magazine_3.jpg);
+}
+
+
+
+
+
+/***************************************************************컨텐츠영역(2)-브런치********************************************************************/
+.cont_2{/*브런치영역 하단 여백*/
+    margin-bottom: 3%;
+}
+.page.cont_2{
+    background-color: #f9f6f1;
+}
+.cont_2 .fbx{
+    width: 1300px;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.brunch_text{
+    position: absolute;
+    left: -77px;
+    top: -122px;
+}
+
+.brunch_img li:first-child{
+    position: relative;
+    height: 78%;
+    margin-top: 140px;
+    margin-right: 5px;
+}
+.brunch_img li:nth-child(2){
+    position: relative;
+    height: 78%;
+    margin-top: 71px;
+    margin-left: 5px;
+}
+
+.c2btn{
+    position: absolute;
+    bottom: -14%;
+    left: 25%;
+}
+
+/***************************************************************컨텐츠영역(3)********************************************************************/
+.cont_3{/*하단 여백*/
+    margin-bottom: 3%;
+}
+
+.pick_text_area{
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/*pick글씨(h3)*/
+.pick_text{
+    font-size: 45px;
+    height: 80px;
+    line-height: 80px;
+    position: relative;
+    padding-top: 2%;
+}
+.pick_text::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 35px;
+    height: 1px;
+    background-color: #666;
+}
+
+
+/*pick>p설정*/
+.pick_text_area p{
+    font-style: italic;
+    font-size: 1.5625rem;
+    line-height: 34px;
+    letter-spacing: -0.8px;
+    font-weight: 300;
+    padding-top: 18px;
+}
+
+.picBox{
+    flex-wrap:wrap;
+    /*플렉스박스 줄바꿈*/
+    width: 1300px;
+    max-width: 100%;
+    height: 68%;
+    margin: 30px auto;
+    margin-bottom: 0;
+}
+.picBox li{
+    height: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+}
+
+.picBox li:nth-child(1){
+    background-image: url(../images/pic_1.jpg);
+}
+
+.picBox li:nth-child(2){
+    background-image: url(../images/pic_2.jpg);
+}
+
+.picBox li:nth-child(3){
+    background-image: url(../images/pic_3.jpg);
+}
+
+.picBox li:nth-child(4){
+    background-image: url(../images/pic_4.jpg);
+}
+
+.picBox li:nth-child(5){
+    background-image: url(../images/pic_5.jpg);
+}
+
+.picBox li:nth-child(6){
+    background-image: url(../images/pic_6.jpg);
+}
+
+/*pick숙소명*/
+.picTitle{
+    font-family: 'Noto Sans KR';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    font-size: 1.125rem;
+    color: #666;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    padding-right: 15px;
+}
+
+.c3btn{
+    width: 230px;
+    margin: 10px auto;
+}
+.c3btn p{
+    bottom: 27px;
+}
+
+
+/*버튼 호버*/
+.c3btn:hover{
+    width: 274px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #ece4d0;
+}
+
+
+
+/***************************************************************컨텐츠영역-리뷰(4)********************************************************************/
+.cont_4{
+    background-color: #f8f8f8;          
+}
+
+.review{
+    padding-top: 4%;
+}
+
+.c4tit{
+    height: 85px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 85px;
+    font-style: italic;
+    letter-spacing: -1px;
+    font-weight: 100;
+}
+.cont_4 .fbx{
+    height: 40%;
+}
+.cont_4 .fbx li{
+    flex: 1;
+    outline: 2px dashed purple;
+    margin-right: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+.cont_4 .fbx li:last-child{
+    margin-right: 0;
+}
+
+/*리뷰 사진들*/
+.cont_4 .fbx li:nth-child(1){
+    background-image: url(../images/review_1.jpg);
+}
+.cont_4 .fbx li:nth-child(2){
+    background-image: url(../images/review_2.jpg);
+}
+
+.cont_4 .fbx li:nth-child(3){
+    background-image: url(../images/review_3.jpg);
+}
+
+.cont_4 .fbx li:nth-child(4){
+    background-image: url(../images/review_4.jpg);
+}
+
+.cont_4 .fbx li:nth-child(5){
+    background-image: url(../images/review_5.jpg);
+}
+
+.cont_4 .fbx li:nth-child(6){
+    background-image: url(../images/review_6.jpg);
+}
+
+.cont_4 .fbx li:nth-child(7){
+    background-image: url(../images/review_7.jpg);
+}
+
+.cont_4 .fbx li:nth-child(8){
+    background-image: url(../images/review_08.jpg);
+}
+
+.cont_4 .fbx li:nth-child(9){
+    background-image: url(../images/review_9.jpg);
+}
+
+
+
+
+
+
+
+
