@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
-    <title>Stay Folio환영환영</title>
+    <title>Stay Folio</title>
     <!-- jQuery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <!--마우스커서 변경-->
     <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
     <script src="js/main.js"></script>
-    
+
 </head>
 
 <body>
@@ -115,7 +116,7 @@
                                 <a href="#">
                                     <span>
                                         <img src="images/show_btn_arrow.png" alt="">
-                                    <p>Show All Magazine</p>
+                                        <p>Show All Magazine</p>
                                     </span>
                                 </a>
                             </div>
@@ -188,21 +189,38 @@
     <div class="page cont_3">
         <div class="inbox rbx" id="cont_3">
             <div class="ibx">
-              
-               <!--팝업창-->
+                <!--------------- 팝업창 --------------------->
                 <div class="pick_pop_1_wrap">
                     <div class="pick_pop_1">
+                        <!--닫기버튼-->
+                        <a href="#" class="popup_close"><img src="images/close_btn_white.png" alt="닫기버튼"></a>
                         <section class="popup_top">
                             <h4>데치우호텔<small>DECHIU hotel</small></h4>
                             <p>
-                                <img src="images/place_2.png" alt="지도아이콘">
-                                23 Nguyễn Phan Vinh, Cẩm An, Hội An, Quảng Nam, Vietnam
+                                <img src="images/place_2.png" alt="지도아이콘" class="place_btn">
+                                <a href="https://goo.gl/maps/FKCWKhJazoEoXRxKA" target="_blank">23 Nguyễn Phan Vinh, Cẩm An, Hội An, Quảng Nam, Vietnam</a>
                             </p>
                         </section>
                         <section class="popup_bottom">
                             <div class="popup_img">
-                                <span class="pre_btn"></span>
-                                <span class="next_btn"></span>
+                                <ul class="popup_img_slide">
+                                    <li class="slide1"></li>
+                                    <li class="slide2"></li>
+                                    <li class="slide3"></li>
+                                    <li class="slide4"></li>
+                                    <li class="slide5"></li>
+                                    <li class="slide6"></li>
+                                    <li class="slide7"></li>
+                                    <li class="slide8"></li>
+                                </ul>
+                                <div class="popup_btn">
+                                    <a href="#" class="pre_btn">
+                                        <img src="images/prev_white.png" alt="왼쪽버튼">
+                                    </a>
+                                    <a href="#" class="next_btn">
+                                        <img src="images/next_white.png" alt="오른쪽버튼">
+                                    </a>
+                                </div>
                             </div>
                             <div class="popup_text">
                                 <ul>
@@ -227,8 +245,8 @@
                         </section>
                     </div>
                 </div>
-                       
-                       
+
+
                 <div class="pick_text_area">
                     <h3 class="pick_text">
                         Pick
@@ -297,8 +315,8 @@
                     <div class="btn_show magazine c3btn">
                         <a href="#">
                             <span><img src="images/show_btn_arrow.png" alt="">
-                            
-                            <p>Show All Pick</p>
+
+                                <p>Show All Pick</p>
                             </span>
                         </a>
                     </div>
@@ -419,4 +437,6 @@
     <!--<img src="images/stayfolio.jpg" class="vi">-->
     <img src="images/stayfolio.jpg" class="vi">
 
-</body></html>
+</body>
+
+</html>

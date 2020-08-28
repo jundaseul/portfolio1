@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* stayfolio 미디어쿼리 - media.css */
+
+/* 배너 미디어쿼리 */
+/*************************** 1800px *************************/
+@media all and (max-width:1800px){
+.pick_text{padding-top: 0;}
+}
+
+/*************************** 1700px *************************/
+@media all and (max-width:1700px){
+    .magazine_img li {width: 15.4%;}
+    #ban.rbx::before {padding-top: 50%;}
+    #cont_1.rbx::before {padding-top: 52%;}
+    #cont_2.rbx::before, #cont_3.rbx::before{padding-top: 52%;}
+}
+
+/*************************** 1600px *************************/
+@media all and (max-width:1600px){
+    .ban_line {margin: 0 6%;}
+    .magazine_img li{width: 14.666%;}
+    .btn_show.magazine, .btn_show span{width: 65px; height: 65px;}
+    .btn_show.magazine:hover{height: 65px;}
+    .brunch_img li:nth-child(1){padding-left: 7%; margin-top: 115px;}
+    .brunch_img li:nth-child(2){padding-right: 7%; margin-top: 60px;}
+    .picBox{height: 67%; margin: 20px auto;}
+}
+
+/*************************** 1400px *************************/
+.brunch_img li:nth-child(1) {padding-left: 8%; margin-top: 105px;}
+.brunch_img li:nth-child(2) {padding-right: 8%; margin-top: 50px;}
+.btn_show.magazine, .btn_show span{width: 63px; height: 63px;}
+.btn_show.magazine:hover{height: 63px;}
+#ban.rbx::before {padding-top: 49%;}
+.picbtn_area {padding: 0 45%;}
+
+/*************************** 1350px *************************/
+@media all and (max-width:1350px){
+    /*전체글자크기*/
+    html {font-size: 15px;}    
+    #cont_3.rbx::before {padding-top: 61%;}
+    .pick_text {height: 75px; line-height: 75px;}
+}
+
+/*************************** 1300px *************************/
+@media all and (max-width:1300px){
+    /*전체글자크기*/  
+    .ban_line{width: 85%;}
+    .ban_line_bold{width: 17%;}
+    .view_btn img{width: 95%;}
+    #cont_3.rbx::before {padding-top: 61%;}
+    #cont_2.rbx::before {padding-top: 56%;}
+    .magazine_img li {width: 12.6%;}
+}
+
+
+/*************************** 1280px *************************/
+@media all and (max-width:1280px) {
+    .gnb{right: 3%;}
+    .header_logo{left: 40%;}
+    .magazine_img li{width: 12.666%;}
+    .brunch_img li:nth-child(1){margin-top: 91px; padding-left: 15%;}
+    .brunch_img li:nth-child(2){margin-top: 45px;
+    padding-right: 15%;}
+    .c2btn {bottom: -17%; left: 17%;}
+    
+}
+
+/*************************** 1240px *************************/
+@media all and (max-width:1240px) {
+    .magazine_img li {width: 11.666%;}
+    .magazine_left {padding-left: 4%;}
+    .brunch_text {font-size: 7.4375rem;}
+    .pick_text_area {padding-left: 2%;}
+}
+
+/*************************** 1140px *************************/
+@media all and (max-width:1140px) {
+    #ban.rbx::before {padding-top: 50%;}
+    #cont_1.rbx::before {padding-top: 60%;}
+    #cont_2.rbx::before {padding-top: 60%;}
+    #cont_3.rbx::before {padding-top: 66%;}
+}
+
+/*************************** 1030px *************************/
+@media all and (max-width:1030px){
+    /*전체글자크기*/
+    html {font-size: 15px;}
+    .ban_line{width: 85%;}
+    .ban_line_bold{width: 17%;}
+    .view_btn img{width: 85%;}
+    .gnb{right:5%;}
+    .header_logo{left: 50%;}
+    #cont_2.rbx::before {padding-top: 68%;}
+}
+    
+/*************************** 1024px *************************/
+@media all and (max-width:1024px) {
+    html {font-size: 13px;}
+    
+}
+
+/*************************** 1000px *************************/
+@media all and (max-width:1000px){
+    /*전체글자크기*/
+    html {font-size: 14px;}
+    .ban_line{width: 85%;}
+    .ban_line_bold{width: 17%;}
+    .view_btn img{width: 85%; }
+}
+
+
+
+
+
+
+@media all and (max-width:960px) {/*노트북*/
+    .gnb{right:;}
+}
+@media all and (max-width:768px) {/*타블렛*/
+    .gnb{right:;}
+}
+@media all and (max-width:576px) {/*모바일*/
+    .gnb{right:;}
+}
+@media all and (max-width:360px) {
+    .gnb{right:;}
+}
+
+
+
+
+
+/************** 배너 ******************/
+
+
+
+
+
+
+
+
+
+
+
+
+/******************* 매거진 ****************************/
+
+
+
+/******************* 브런치 ****************************/

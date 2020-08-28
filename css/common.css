@@ -89,10 +89,11 @@
 
 .gnb li {
     position: relative;
-    margin-top: 5px;
-    margin-left: 35px;
+    margin-top: 0.3125rem;
+    margin-left: 2.1875rem;
     letter-spacing: 1px;
     display: inline-block;
+    font-size: 0.875rem;
 }
 
 /*마우스오버시*/
@@ -120,31 +121,6 @@
     border-radius: 50%;
     background-color: #d0e0a7;
 }
-
-/************* 미디어쿼리 ***************/
-@media all and (max-width:1280px) {
-    .gnb{right: 3%;}
-    .header_logo{left: 40%;}
-}
-
-@media all and (max-width:1024px) {
-    .gnb{right:5%;}
-    .header_logo{left: 50%;}
-}
-@media all and (max-width:960px) {/*노트북*/
-    .gnb{right:;}
-}
-@media all and (max-width:768px) {/*타블렛*/
-    .gnb{right:;}
-}
-@media all and (max-width:576px) {/*모바일*/
-    .gnb{right:;}
-}
-@media all and (max-width:360px) {
-    .gnb{right:;}
-}
-
-
 
 
 
@@ -231,6 +207,7 @@ li {
 
 .newsletter_top p {
     position: relative;
+    width: 100%;
 }
 
 .news_input {
