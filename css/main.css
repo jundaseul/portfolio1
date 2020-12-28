@@ -33,10 +33,14 @@
     padding-top: 28%;
 }
 
+#footer.rbx::before {
+    padding-top: 28%;
+}
+
 
 /*메인 페이지 디자인전용*/
 /*gnb*/
-.gnb li a{
+.gnb li a {
     font-size: 1rem;
 }
 
@@ -215,7 +219,7 @@
     margin: 5% 0;
 }
 
-.cont_1 ul.fbx {
+.cont_1 .fbx {
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
@@ -503,8 +507,8 @@ ul.magazine_img {
 
 .pick_pop_1 {
     position: absolute;
-    width: 64vw;
-    height: 70vh;
+    width: 130vmin;
+    height: 70vmin;
     max-width: 100%;
     left: 50%;
     top: 50%;
@@ -520,8 +524,8 @@ ul.magazine_img {
     position: absolute;
     top: -25px;
     right: -25px;
-    width: 50px;
-    height: 50px;
+    width: 5vmin;
+    height: 5vmin;
     border-radius: 50%;
     background-color: #222;
     display: block;
@@ -577,7 +581,7 @@ ul.magazine_img {
 }
 
 .place_btn {
-    width: 15px;
+    width: 1.6vmin;
 }
 
 .popup_bottom {
@@ -587,8 +591,8 @@ ul.magazine_img {
 
 .popup_img {
     position: relative;
-    width: 687px;
-    height: 480px;
+    width: 72vmin;
+    height: 51vmin;
     overflow: hidden;
 }
 
@@ -653,12 +657,12 @@ ul.magazine_img {
 }
 
 .popup_btn img {
-    width: 30px;
+    width: 5vmin;
     padding: 0 10px;
 }
 
 .popup_text {
-    width: 435px;
+    width: 45vmin;
     margin-left: 30px;
     font-family: 'Noto Sans';
 }
@@ -716,8 +720,8 @@ p {
 }
 
 .popup_text li {
-    height: 61px;
-    line-height: 60px;
+    height: 6.5vmin;
+    line-height: 6.5vmin;
     border-top: 1px solid #eee;
 }
 
@@ -926,74 +930,93 @@ p {
     background-color: #f8f8f8;
 }
 
-.review {
-    padding-top: 4%;
-}
-
 .c4tit {
     height: 85px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 85px;
     font-style: italic;
     letter-spacing: -1px;
-    font-weight: 100;
+    font-weight: 200;
+    padding-top: 2%;
 }
 
+/*
 .cont_4 .fbx {
     height: 40%;
 }
+*/
+.swiper2 {
+    height: 100%;
+}
 
-.cont_4 .fbx li {
-    flex: 1;
-    /*outline: 2px dashed purple;*/
-    margin-right: 15px;
+.review_list .swiper-slide {
+    /*    height: 25vh;*/
+    height: 26vmin;
+}
+
+.swiper-wrapper.review_list {
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 85px);
+    align-items: center;
+}
+
+.review_list li {
+    position: relative;
+    display: flex;
+    align-items: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
 
-.cont_4 .fbx li:last-child {
-    margin-right: 0;
+.review_list li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /*리뷰 사진들*/
-.cont_4 .fbx li:nth-child(1) {
+.review_list li.rev1::before {
     background-image: url(../images/review_1.jpg);
 }
 
-.cont_4 .fbx li:nth-child(2) {
+.review_list li.rev2::before {
     background-image: url(../images/review_2.jpg);
 }
 
-.cont_4 .fbx li:nth-child(3) {
+.review_list li.rev3::before {
     background-image: url(../images/review_3.jpg);
 }
 
-.cont_4 .fbx li:nth-child(4) {
+.review_list li.rev4::before {
     background-image: url(../images/review_4.jpg);
 }
 
-.cont_4 .fbx li:nth-child(5) {
+.review_list li.rev5::before {
     background-image: url(../images/review_5.jpg);
 }
 
-.cont_4 .fbx li:nth-child(6) {
+.review_list li.rev6::before {
     background-image: url(../images/review_6.jpg);
 }
 
-.cont_4 .fbx li:nth-child(7) {
+.review_list li.rev7::before {
     background-image: url(../images/review_7.jpg);
 }
 
-.cont_4 .fbx li:nth-child(8) {
+.review_list li.rev8::before {
     background-image: url(../images/review_8.jpg);
 }
 
-.cont_4 .fbx li:nth-child(9) {
+.review_list li.rev9::before {
     background-image: url(../images/review_9.jpg);
-}
-
-.magazine_img li.sld1::before {
-    background-image: url(../images/magazine_01.jpg);
 }

@@ -3,10 +3,52 @@
 $(function () { /////////// jQB //////////////
 
     // 스와이퍼 적용하기 ///
-    var swiper = new Swiper('.swiper-container', {
+    var swiper = new Swiper('.swiper1', {
         slidesPerView: 5,
         spaceBetween: 20,
         loop: true,
+        breakpoints: {
+            // when window width is >= 320px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 2,
+                loop:false
+            },
+            // when window width is >= 320px
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+            },
+            1280: {
+                spaceBetween: 30,
+            },
+        }
+    }); ///////// swiper //////////
+
+    var swiper = new Swiper('.swiper2', {
+        slidesPerView: 8,
+        spaceBetween: 20,
+        loop: false,
+        breakpoints: {
+            // when window width is >= 320px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 25,
+            },
+            1400: {
+                slidesPerView: 7,
+                spaceBetween: 30,
+            },
+            
+        }
     }); ///////// swiper //////////
 
 

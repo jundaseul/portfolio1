@@ -11,6 +11,10 @@
 
 /*************************** 1700px *************************/
 @media all and (max-width:1700px) {
+    .pick_pop_1 {
+        height: 74vh;
+    }
+
     .magazine_img li {
         width: 15.4%;
     }
@@ -27,6 +31,12 @@
     #cont_3.rbx::before {
         padding-top: 52%;
     }
+
+
+    #footer.rbx::before {
+        padding-top: 35%;
+    }
+
 }
 
 /*************************** 1600px *************************/
@@ -70,6 +80,14 @@
     .magazine_left {
         margin-left: -15%;
     }
+
+    #cont_4.rbx::before {
+        padding-top: 40%;
+    }
+
+    #footer .f1h1 {
+        height: 22vh;
+    }
 }
 
 /*************************** 1440px *************************/
@@ -87,12 +105,15 @@
     }
 
     #cont_1.rbx::before {
-        padding-top: 60%;
+        padding-top: 51%;
     }
 
-    #cont_2.rbx::before,
+    #cont_2.rbx::before {
+        padding-top: 55%;
+    }
+
     #cont_3.rbx::before {
-        padding-top: 70%;
+        padding-top: 65%;
     }
 
     .brunch_img li:nth-child(1) {
@@ -127,15 +148,37 @@
         padding: 3% 45%;
     }
 
-    .cont_4 .fbx {
-        height: 50%;
+    #footer.rbx::before {
+        padding-top: 36%;
     }
+
+    .pick_pop_1 {
+        width: 110vmin;
+        height: 69vh;
+    }
+
 }
 
 /*************************** 1360px *************************/
 @media all and (max-width:1360px) {
     .magazine_left {
         margin-left: -8%;
+    }
+
+    #cont_2.rbx::before {
+        padding-top: 57%;
+    }
+
+    #footer.rbx::before {
+        padding-top: 38%;
+    }
+
+    #footer .f1h1 {
+        height: 20vh;
+    }
+
+    .footer_logo {
+        top: 10vmin;
     }
 }
 
@@ -156,10 +199,19 @@
     .magazine_left {
         margin-left: auto;
     }
+
+    .pick_pop_1 {
+        width: 100vmin;
+        height: 60vh;
+    }
+
+    .popup_img {
+        height: 43vmin;
+    }
 }
 
 
-/*************************** 1024px *************************/
+/*************************** 1024px - 아이패드 pro *************************/
 @media all and (max-width:1024px) {
     html {
         font-size: 16px;
@@ -169,116 +221,213 @@
         padding: 0 3%;
     }
 
+    .gnb {
+        display: none;
+    }
+
     #ban.rbx::before {
         padding-top: 65%;
     }
 
     #cont_1.rbx::before {
-        padding-top: 70%;
+        padding-top: 72%;
     }
 
-    .col-3 {
+    #cont_1 .fbx .col-3 {
         flex-basis: 35%;
         padding: 0 5%;
     }
 
-    .col-9 {
+    #cont_1 .fbx .col-9 {
         flex-basis: 65%;
     }
 
     #cont_2.rbx::before {
-        padding-top: 75%;
+        padding-top: 78%;
     }
 
     #cont_3.rbx::before {
-        padding-top: 85%;
+        padding-top: 92%;
     }
 
     .pick_text_area {
-        padding: 0 3%;
+        padding: 2% 3%;
     }
 
     .picbtn_area {
         padding: 3% 40%;
     }
 
-    #footer{
+    #cont_4.rbx::before {
+        padding-top: 50%;
+    }
+
+    /*pick*/
+    #cont_3.rbx::before {
+        padding-top: 150%;
+    }
+
+    .picBox {
+        height: 80%;
+    }
+
+    .picBox .col-4 {
+        flex-basis: 50%;
+        margin-bottom: 5%;
+    }
+
+    .picBox li {
+        height: 23%;
+    }
+
+    .picbtn_area {
+        padding: 1% 40%;
+        margin-top: -5%;
+    }
+
+    .picTitle {
+        font-size: 1.3rem;
+    }
+
+    /*푸터*/
+    .footer .fbx {
+        padding: 0 7%;
+    }
+
+    #footer.rbx::before {
+        padding-top: 105%;
+    }
+
+    .footer_logo {
+        left: 3%;
+    }
+
+    #footer .fbx .col-3 {
+        flex-basis: 50%;
+        padding: 5% 3%;
+    }
+
+    #footer .fbx .col-3 h2 {
+        font-size: 1.3rem;
+    }
+
+    #footer .fbx .col-3 li,
+    #footer .fbx .col-3 a {
+        font-size: 1rem;
+        line-height: 35px;
+    }
+
+    .contact,
+    .sns,
+    .newsletter {
+        padding-left: 0;
+    }
+
+    /*팝업*/
+    .pick_pop_1 {
+        width: 85vmin;
+        height: 38vh;
+        padding: 3%;
+    }
+
+    .popup_img {
+        height: 35vmin;
+    }
+}
+
+/*************************** 768px - 아이패드 *************************/
+@media all and (max-width:768px) {
+    #ban.rbx::before {
+        padding-top: 70%;
+    }
+
+    .ban_line {
+        margin: 0 12%;
+    }
+
+    #cont_1.rbx::before {
+        padding-top: 100%;
+    }
+
+    #cont_1 .fbx .col-3 {
         padding: 0 3%;
+        flex-basis: 42%;
+    }
+
+    #cont_2.rbx::before {
+        padding-top: 120%;
+    }
+
+    .btn_show p {
+        font-size: 1.6rem;
+    }
+
+    .picbtn_area {
+        padding: 1% 35.5%;
+        margin-top: -4.5%;
+    }
+
+
+    /*리뷰*/
+    #cont_4.rbx::before {
+        padding-top: 65%;
+    }
+
+    .c4tit {
+        padding-top: 5%;
+        font-size: 1.9rem;
+        font-weight: 300;
+    }
+
+    .review_list .swiper-slide {
+        height: 30vmin;
+    }
+
+
+    /*푸터*/
+    .footer_logo {
+        width: 12vmin;
+    }
+
+    #footer.rbx::before {
+        padding-top: 90%;
+    }
+
+    .button_text {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+/*************************** 480px - 아이패드 *************************/
+@media all and (max-width:480px) {
+    #ban.rbx::before {
+        padding-top: 80vh;
+    }
+
+    .ban_line {
+        display: none;
+    }
+
+    .ban_control {
+        margin: -6% auto;
+    }
+/*
+
+    #cont_1.rbx::before {
+        padding-top: 100vh;
     }
     
-    #footer .fbx .col-3{
-        flex-basis: 25%;
+    .cont_1 .fbx{
+        flex-wrap: wrap;
     }
-}
 
-/*************************** 1140px *************************/
-@media all and (max-width:1140px) {}
-
-/*************************** 1030px *************************/
-@media all and (max-width:1030px) {
-    /*전체글자크기*/
-}
-
-/*************************** 1024px *************************/
-@media all and (max-width:1024px) {}
-
-/*************************** 1000px *************************/
-@media all and (max-width:1000px) {}
-
-
-
-
-
-
-@media all and (max-width:960px) {
-
-    /*노트북*/
-    .gnb {
-        right: ;
+    #cont_1 .fbx .col-3, #cont_1 .fbx .col-9 {
+        flex-basis: 100vw;
     }
-}
-
-@media all and (max-width:768px) {
-
-    /*타블렛*/
-    .gnb {
-        right: ;
+    #cont_1 .fbx .col-9 {
+        height: 50vh;
     }
+*/
+
 }
-
-@media all and (max-width:576px) {
-
-    /*모바일*/
-    .gnb {
-        right: ;
-    }
-}
-
-@media all and (max-width:360px) {
-    .gnb {
-        right: ;
-    }
-}
-
-
-
-
-
-/************** 배너 ******************/
-
-
-
-
-
-
-
-
-
-
-
-
-/******************* 매거진 ****************************/
-
-
-
-/******************* 브런치 ****************************/
