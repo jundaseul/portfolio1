@@ -503,12 +503,12 @@ ul.magazine_img {
 
 .pick_pop_1 {
     position: absolute;
-    width: 65%;
+    width: 64vw;
+    height: 70vh;
     max-width: 100%;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 70%;
     border-radius: 5px;
     background-color: #fff;
     padding: 2% 2%;
