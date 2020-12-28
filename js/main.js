@@ -1,15 +1,17 @@
 /* main.js */
 
 $(function () { /////////// jQB //////////////
-    
+
     // 스와이퍼 적용하기 ///
     var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 5,
-      spaceBetween: 20,
-      loop: true,
+        slidesPerView: 5,
+        spaceBetween: 20,
+        loop: true,
     }); ///////// swiper //////////
-    
-    
+
+
+
+
 
     /*gnb 메뉴 슬라이드 이동 세팅*/
     $(".gnb a").click(function (e) {

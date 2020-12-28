@@ -9,16 +9,7 @@
 @import url(gridView.css);
 
 
-/***************************************************************검수용이미지********************************************************************/
-.vi {
-    position: absolute;
-    top: 95px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    opacity: .5;
-    display: none;
-}
+
 
 /*각 페이지영역별 비율 셋팅*/
 
@@ -35,7 +26,7 @@
 }
 
 #cont_3.rbx::before {
-    padding-top: 44%;
+    padding-top: 50%;
 }
 
 #cont_4.rbx::before {
@@ -44,6 +35,11 @@
 
 
 /*메인 페이지 디자인전용*/
+/*gnb*/
+.gnb li a{
+    font-size: 1rem;
+}
+
 
 /***************************************************************배너영역********************************************************************/
 .page.ban {
@@ -780,7 +776,7 @@ p {
     width: 1200px;
     max-width: 100%;
     height: 68%;
-    margin: 30px auto;
+    margin: 3% auto;
     margin-bottom: 0;
 }
 
@@ -996,4 +992,8 @@ p {
 
 .cont_4 .fbx li:nth-child(9) {
     background-image: url(../images/review_9.jpg);
+}
+
+.magazine_img li.sld1::before {
+    background-image: url(../images/magazine_01.jpg);
 }
