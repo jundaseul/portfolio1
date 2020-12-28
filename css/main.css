@@ -8,6 +8,7 @@
 @import url(gridSetFlex.css);
 @import url(gridView.css);
 
+
 /***************************************************************검수용이미지********************************************************************/
 .vi{
     position: absolute;
@@ -22,16 +23,16 @@
 /*각 페이지영역별 비율 셋팅*/
 
 #ban.rbx::before{
-    padding-top: 45%;
+    padding-top: 43%;
 }
 #cont_1.rbx::before{
-    padding-top: 48%;
+    padding-top: 41%;
 }
 #cont_2.rbx::before{
-    padding-top: 47%;
+    padding-top: 45%;
 }
 #cont_3.rbx::before{
-    padding-top: 47%;
+    padding-top: 44%;
 }
 #cont_4.rbx::before{
     padding-top: 28%;
@@ -98,7 +99,7 @@
 }
 
 .slide li.s1::before{
-    background: url(../images/ban.jpeg) no-repeat center/cover;
+    background: url(../images/ban_01.jpeg) no-repeat center/cover;
 }
 .slide li.s2::before{
     background: url(../images/ban_02.jpg) no-repeat center/cover;
@@ -193,6 +194,7 @@
 
 
 /*************************************************************** 컨텐츠영역(1)-magazine*********************************************************/
+.mapad{padding-top: 3%;}
 
 .cont_1{
     margin: 5% 0;
@@ -296,15 +298,15 @@
 
 /*magazine-우측*/
 .magazine_right{
-    width: 128%;
+    width: 100%;
     height: 100%;
 }
 
 ul.magazine_img{
     position: relative;
     left: 0;
-    display: flex;
-    width: 300%;/*2개씩 3파트*/
+/*    display: flex;*/
+    width: 100%;/*2개씩 3파트*/
     height: 100%;
     overflow: hidden;
     align-items: center;
@@ -323,11 +325,13 @@ ul.magazine_img{
 
 .magazine_img li{
     position: relative;
-    width: 15.666%;
-    margin: 0 .3%;/*양쪽합해 1%가 width 크기에서 빠짐*/
+/*    width: 15.666%;*/
+    /*margin: 0 .3%;*//*양쪽합해 1%가 width 크기에서 빠짐*/
     /*5개지만 3세트로 생각하여 6개크기로 설정!*/
     /*height: 100%;    */
-    height: 81%;
+/*    height: 81%;*/
+    display: flex;
+    align-items: center;
 }
 
 .magazine_img li::before{
@@ -345,24 +349,24 @@ ul.magazine_img{
 
 
 
-.magazine_img li:nth-child(1)::before{
+.magazine_img li.sld1::before{
     background-image: url(../images/magazine_01.jpg);
 }
 
-.magazine_img li:nth-child(2)::before{
+.magazine_img li.sld2::before{
     background-image: url(../images/magazine_02.jpg);
 }
 
-.magazine_img li:nth-child(3)::before{
+.magazine_img li.sld3::before{
     background-image: url(../images/magazine_03.jpg);
 }
 
-.magazine_img li:nth-child(4)::before{
-    background-image: url(../images/magazine_03.jpg);
+.magazine_img li.sld4::before{
+    background-image: url(../images/magazine_04.jpg);
 }
 
-.magazine_img li:nth-child(5)::before{
-    background-image: url(../images/magazine_03.jpg);
+.magazine_img li.sld5::before{
+    background-image: url(../images/magazine_05.jpg);
 }
 
 
@@ -461,6 +465,7 @@ ul.magazine_img{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 100;
+    display: none;
 }
 .pick_pop_1{
     position: absolute;
@@ -469,10 +474,10 @@ ul.magazine_img{
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    height: 68%;
+    height: 70%;
     border-radius: 5px;
     background-color: #fff;
-    padding: 40px 30px;
+    padding: 2% 2%;
     box-sizing: border-box;
     z-index: 999;
 }
@@ -550,11 +555,7 @@ ul.magazine_img{
 }
 
 .popup_img_slide{
-    /*position: absolute;
-    width: 100%;
-    height: 100%;*/
     position: relative;
-    /*left: 0;*/
     width: 800%;/*8장*/
     height: 100%;
     display: flex;
@@ -897,7 +898,7 @@ ul.magazine_img{
     background-image: url(../images/review_1.jpg);
 }
 .cont_4 .fbx li:nth-child(2){
-    background-image: url(../images/review_02.jpg);
+    background-image: url(../images/review_2.jpg);
 }
 
 .cont_4 .fbx li:nth-child(3){
@@ -909,7 +910,7 @@ ul.magazine_img{
 }
 
 .cont_4 .fbx li:nth-child(5){
-    background-image: url(../images/review_05.jpg);
+    background-image: url(../images/review_5.jpg);
 }
 
 .cont_4 .fbx li:nth-child(6){
@@ -917,7 +918,7 @@ ul.magazine_img{
 }
 
 .cont_4 .fbx li:nth-child(7){
-    background-image: url(../images/review_07.jpg);
+    background-image: url(../images/review_7.jpg);
 }
 
 .cont_4 .fbx li:nth-child(8){
@@ -925,7 +926,7 @@ ul.magazine_img{
 }
 
 .cont_4 .fbx li:nth-child(9){
-    background-image: url(../images/review_09.jpg);
+    background-image: url(../images/review_9.jpg);
 }
 
 

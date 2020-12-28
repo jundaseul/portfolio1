@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <title>Stay Folio</title>
     <!-- jQuery library -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <!--마우스커서 변경-->
     <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
     <script src="js/main.js"></script>
@@ -27,7 +29,7 @@
                 </li>
                 <li class="col-11 gbox">
                     <div class="gnbShow">
-                        <!--<img src="images/header_menu.png" alt="menu" class="header_menu">-->
+<!--                        <img src="images/header_menu.png" alt="menu" class="header_menu">-->
                         <ul class="gnb">
                             <li><a href="#ban">Home</a></li>
                             <li><a href="#cont_1">Magazine</a></li>
@@ -106,7 +108,7 @@
     <!--컨텐츠영역1(magazine)-->
     <div class="page cont_1">
         <div class="inbox rbx" id="cont_1">
-            <div class="ibx">
+            <div class="ibx mapad">
                 <ul class="fbx">
                     <li class="col-3">
                         <div class="magazine_left">
@@ -123,34 +125,34 @@
                         </div>
                     </li>
                     <li class="col-9">
-                        <div class="magazine_right">
-                            <ul class="magazine_img slide">
-                                <li class="zoom">
+                        <div class="magazine_right swiper-container">
+                            <ul class="magazine_img slide swiper-wrapper">
+                                <li class="zoom swiper-slide sld1">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
                                         <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
 
-                                <li class="zoom">
+                                <li class="zoom swiper-slide sld2">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
                                         <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
-                                <li class="zoom">
+                                <li class="zoom swiper-slide sld3">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
                                         <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
-                                <li class="zoom">
+                                <li class="zoom swiper-slide sld4">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
                                         <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
-                                <li class="zoom">
+                                <li class="zoom swiper-slide sld5">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
                                         <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
@@ -169,7 +171,6 @@
             <div class="ibx">
                 <ul class="fbx brunch_img">
                     <li class="col-6">
-                        <img src="images/brunch_text.png" alt="브런치1" class="brunch_text" style="display: none">
                         <div class="brunch_text">Let's know!</div>
                     </li>
                     <li class="col-6">
@@ -411,31 +412,6 @@
 
 
 
-
-
-
-
-
-
-    <!--그리드뷰-->
-    <!--<ul class="grid">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>-->
-
-    <!-- 검수용 완성 이미지 -->
-    <!--<img src="images/stayfolio.jpg" class="vi">-->
-    <img src="images/stayfolio.jpg" class="vi">
 
 </body>
 

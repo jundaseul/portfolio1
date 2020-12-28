@@ -31,7 +31,8 @@
 .brunch_img li:nth-child(2) {padding-right: 8%; margin-top: 50px;}
 .btn_show.magazine, .btn_show span{width: 63px; height: 63px;}
 .btn_show.magazine:hover{height: 63px;}
-#ban.rbx::before {padding-top: 49%;}
+#ban.rbx::before {padding-top: 42%;}
+.magazine_img li {width: 13.2%;}
 .picbtn_area {padding: 0 45%;}
 
 /*************************** 1350px *************************/
