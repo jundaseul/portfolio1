@@ -7,6 +7,10 @@
     .pick_text {
         padding-top: 0;
     }
+
+    #ban.rbx::before {
+        padding-top: 48%;
+    }
 }
 
 /*************************** 1700px *************************/
@@ -225,6 +229,11 @@
         display: none;
     }
 
+    .toggle {
+        display: block;
+    }
+    
+    /*배너*/
     #ban.rbx::before {
         padding-top: 65%;
     }
@@ -401,6 +410,10 @@
 
 /*************************** 480px - 아이패드 *************************/
 @media all and (max-width:480px) {
+    html {
+        font-size: 15px;
+    }
+
     #ban.rbx::before {
         padding-top: 80vh;
     }
@@ -412,7 +425,8 @@
     .ban_control {
         margin: -6% auto;
     }
-/*
+
+    /*
 
     #cont_1.rbx::before {
         padding-top: 100vh;
@@ -429,5 +443,215 @@
         height: 50vh;
     }
 */
+    /*매거진*/
+    .cont_1 {
+        margin-top: 30%;
+    }
+
+    #cont_1 .fbx .col-3 {
+        flex-basis: auto;
+        padding: 0 1.5%;
+    }
+
+    #cont_1.rbx::before {
+        padding-top: 120vh;
+    }
+
+    .magazine_left h3 {
+        height: auto;
+        font-size: 2.3rem;
+        line-height: 80px;
+    }
+
+    .magazine_left > h3::after {
+        display: none;
+    }
+
+    .cont_1 .fbx {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .magazine_left > p {
+        padding-bottom: 0;
+        padding-top: 0;
+        font-size: 1.15rem;
+    }
+
+    .magazine_img .swiper-slide {
+        height: 65vh;
+    }
+
+    .magazine_left > p br {
+        display: none;
+    }
+
+    .magazine_break {
+        display: inline-block;
+    }
+
+    .btn_show.magazine.mabtn {
+        display: none;
+    }
+
+    /*모바일 버전 매거진 버튼*/
+    .btn_show.magazine.mob {
+        display: block;
+        margin: 0 1.4%;
+/*        margin-left: 4vmin;*/
+    }
+
+
+    /*brunch*/
+    #cont_2.rbx::before {
+        padding-top: 90vh;
+    }
+
+    .cont_2 .fbx {
+        align-items: center;
+    }
+
+    .brunch_img li {
+        height: 50%;
+    }
+
+    .brunch_text {
+        font-size: 4.3rem;
+        top: 47%;
+    }
+
+    .btn_show.magazine.c2btn {
+        bottom: -35%;
+        left: -65%;
+    }
+
+    .brunch_img li:nth-child(1) {
+        padding-left: 0;
+        margin-top: -30%;
+    }
+
+    .brunch_img li:nth-child(2) {
+        padding-right: 0;
+        margin-top: -9%;
+    }
+
+    /*pick*/
+    #cont_3.rbx::before {
+        padding-top: 300vh;
+    }
+    .cont_3{
+        margin-top: 30%;
+    }
+
+    .picBox {
+        margin-top: 15%;
+    }
+
+    .picBox .col-4 {
+        flex-basis: 100%;
+        margin-bottom: 9%;
+    }
+
+    .picBox li {
+        height: 12%;
+    }
+
+    .pick_text_area {
+        padding-left: 1.5%;
+    }
+
+    .pick_text {
+        font-size: 2.3rem;
+        height: auto;
+    }
+
+    .pick_text::after {
+        display: none;
+    }
+
+    .pick_text_area p {
+        font-size: 1.15rem;
+        line-height: 2rem;
+        padding-top: 0;
+    }
+
+    .picTitle {
+        font-size: 1.23rem;
+    }
+
+    .picbtn_area {
+        left: -15.5%;
+        margin-top: 2%;
+    }
+
+    /*리뷰*/
+    #cont_4.rbx::before {
+        padding-top: 80vh;
+    }
+
+    .swiper-container.swiper2 {
+        margin-top: -5%;
+    }
+
+    .c4tit {
+        padding-top: 8%;
+        font-size: 1.7rem;
+    }
+
+    .review_list .swiper-slide {
+        height: 41vh;
+    }
+
+    /*푸터*/
+    #footer.rbx::before {
+        padding-top: 110vh;
+    }
+
+    .footer .fbx {
+        padding: 0 5%;
+    }
+
+    #footer .f1h1 {
+        height: 18vh;
+        margin-bottom: 15%;
+    }
+
+    .footer_logo {
+        width: 19vmin;
+        top: 13vmin;
+        left: 0;
+    }
+
+    #footer .fbx .col-3 {
+        flex-basis: auto;
+        padding: 0;
+    }
+
+    #footer .fbx .col-3 h2 {
+        padding-bottom: 2%;
+        font-size: 1.2rem;
+    }
+
+    #footer .fbx .col-3 li,
+    #footer .fbx .col-3 a {
+        line-height: 25px;
+        font-size: 0.95rem;
+    }
+
+    .f1h2 {
+        height: 32vw;
+    }
+
+    .sns .container {
+        display: flex;
+    }
+
+    .sns .container li {
+        margin-right: 4%;
+    }
+
+    .sns .container li:last-child {
+        margin-right: 0;
+    }
 
 }

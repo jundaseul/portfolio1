@@ -4,16 +4,11 @@ $(function () { /////////// jQB //////////////
 
     // 스와이퍼 적용하기 ///
     var swiper = new Swiper('.swiper1', {
-        slidesPerView: 5,
+        slidesPerView: 2.7,
         spaceBetween: 20,
         loop: true,
         breakpoints: {
             // when window width is >= 320px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 2,
-                loop:false
-            },
             // when window width is >= 320px
             768: {
                 slidesPerView: 4,
@@ -24,17 +19,21 @@ $(function () { /////////// jQB //////////////
                 spaceBetween: 50,
             },
             1280: {
+                slidesPerView: 5,
                 spaceBetween: 30,
             },
         }
     }); ///////// swiper //////////
 
     var swiper = new Swiper('.swiper2', {
-        slidesPerView: 8,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 0,
         loop: false,
         breakpoints: {
             // when window width is >= 320px
+            415: {
+                slidesPerView: 1,
+            },
             768: {
                 slidesPerView: 3,
                 spaceBetween: 30,
@@ -47,7 +46,11 @@ $(function () { /////////// jQB //////////////
                 slidesPerView: 7,
                 spaceBetween: 30,
             },
-            
+            1600: {
+                slidesPerView: 7,
+                spaceBetween: 20,
+            },
+
         }
     }); ///////// swiper //////////
 
@@ -397,6 +400,12 @@ $(function () { /////////// jQB //////////////
 
     }); /////// click ///////////
 
+
+    
+    // 햄버거 버튼
+    $('.toggle').click(function () {
+        $(this).toggleClass('active');
+    });
 
 
 

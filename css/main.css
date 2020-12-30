@@ -318,6 +318,15 @@
     left: 55px;
 }
 
+.magazine_break{
+    display: none;
+}
+
+/*모바일 버전 매거진 버튼*/
+.btn_show.magazine.mob{
+    display: none;
+}
+
 
 /*magazine-우측*/
 .magazine_right {
@@ -447,7 +456,7 @@ ul.magazine_img {
 .brunch_img li:nth-child(1) {
 
     background-image: url(../images/brunch_1.jpg);
-    margin-top: 120px;
+    margin-top: 12.5vmin;
     /*margin-right: 5px;*/
     padding-left: 5%;
 }
@@ -455,7 +464,7 @@ ul.magazine_img {
 .brunch_img li:nth-child(2) {
     position: relative;
     background-image: url(../images/brunch_2.jpg);
-    margin-top: 69px;
+    margin-top: 7vmin;
     padding-right: 5%;
 }
 
