@@ -2,6 +2,42 @@
 
 $(function () { /////////// jQB //////////////
 
+    //모든 a태그 이동 막기
+    $('a[href="#"]').click(function (e) {
+        e.preventDefault();
+    });
+
+
+    // 햄버거 버튼
+    $('.toggle').click(function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $(".menuBox").toggle("100");
+        //$(".menuBox").toggle("slow");
+        $('html, body').toggleClass('hidden');
+    });
+
+
+    $(".menuBox_gnb a, .menuBox_logo").click(function () {
+        $(".menuBox").hide(100);
+        $(".toggle").toggleClass('active');
+        $('html, body').toggleClass('hidden');
+    });
+
+
+    // 모달창 스크롤막기
+    //    $(document).on('click', '.menuBox', function () {
+    //        $.fn.fullpage.setAllowScrolling(false);
+    //        $.fn.fullpage.setKeyboardScrolling(false);
+    //    });
+    //
+    //    $(document).on('click', '.toggle', function () {
+    //        $.fn.fullpage.setAllowScrolling(true);
+    //        $.fn.fullpage.setKeyboardScrolling(true);
+    //    });
+
+
     // 스와이퍼 적용하기 ///
     var swiper = new Swiper('.swiper1', {
         slidesPerView: 2.7,
@@ -56,17 +92,15 @@ $(function () { /////////// jQB //////////////
 
 
 
-
-
     /*gnb 메뉴 슬라이드 이동 세팅*/
     $(".gnb a").click(function (e) {
         e.preventDefault();
 
         var pid = $(this).attr("href");
-        console.log("아이디:" + pid);
+        //console.log("아이디:" + pid);
 
         var pgpos = $(pid).offset().top - 80;
-        console.log("top값:" + pgpos);
+        //console.log("top값:" + pgpos);
 
 
         $("html,body").stop().animate({
@@ -77,9 +111,24 @@ $(function () { /////////// jQB //////////////
             .addClass("on")
             .siblings()
             .removeClass("on");
-
-
     }); ////////// click ////////////
+
+
+    $(".menuBox_gnb a").click(function (e) {
+        e.preventDefault();
+
+        var mid = $(this).attr("href");
+        //console.log("아이디:" + mid);
+
+        var mpgpos = $(mid).offset().top - 130;
+
+        $("html,body").stop().animate({
+            scrollTop: mpgpos + "px"
+        }, 600, "easeInOutQuart");
+
+    });
+
+
 
 
     /*마우스 커서 변경*/
@@ -400,12 +449,6 @@ $(function () { /////////// jQB //////////////
 
     }); /////// click ///////////
 
-
-    
-    // 햄버거 버튼
-    $('.toggle').click(function () {
-        $(this).toggleClass('active');
-    });
 
 
 

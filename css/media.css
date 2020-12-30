@@ -225,6 +225,19 @@
         padding: 0 3%;
     }
 
+    .header,
+    #header [class*=col-] {
+        height: 100px;
+    }
+
+    .page.ban {
+        padding-top: 100px;
+    }
+
+    .header_logo {
+        width: 11vmin;
+    }
+
     .gnb {
         display: none;
     }
@@ -232,25 +245,54 @@
     .toggle {
         display: block;
     }
-    
+
+    .menuBox_logo img {
+        width: 14vmin;
+    }
+
+
     /*배너*/
     #ban.rbx::before {
         padding-top: 65%;
     }
 
+    /*매거진*/
     #cont_1.rbx::before {
         padding-top: 72%;
     }
 
     #cont_1 .fbx .col-3 {
         flex-basis: 35%;
-        padding: 0 5%;
+        padding: 5% 3%;
     }
 
     #cont_1 .fbx .col-9 {
         flex-basis: 65%;
     }
 
+    .magazine_left h3,
+    .pick_text {
+        font-size: 2.8rem;
+    }
+
+    .magazine_left > p {
+        font-size: 1.75rem;
+        line-height: 45px;
+    }
+
+    .btn_show.magazine:hover {
+        width: 300px;
+    }
+
+    .btn_show.magazine.c3btn:hover {
+        width: 245px;
+    }
+
+    .btn_show p {
+        font-size: 1.7rem;
+    }
+
+    /*브런치*/
     #cont_2.rbx::before {
         padding-top: 78%;
     }
@@ -295,7 +337,17 @@
     }
 
     .picTitle {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+    }
+
+    .pick_text_area p {
+        font-size: 1.75rem;
+    }
+
+    /*리뷰*/
+    .c4tit {
+        font-size: 2rem;
+        font-weight: 300;
     }
 
     /*푸터*/
@@ -304,11 +356,12 @@
     }
 
     #footer.rbx::before {
-        padding-top: 105%;
+        padding-top: 80%;
     }
 
     .footer_logo {
         left: 3%;
+        width: 12vmin;
     }
 
     #footer .fbx .col-3 {
@@ -317,19 +370,27 @@
     }
 
     #footer .fbx .col-3 h2 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 
     #footer .fbx .col-3 li,
     #footer .fbx .col-3 a {
-        font-size: 1rem;
-        line-height: 35px;
+        font-size: 1.3rem;
+        line-height: 38px;
     }
 
     .contact,
     .sns,
     .newsletter {
         padding-left: 0;
+    }
+
+    .news_input {
+        font-size: 1.3rem;
+    }
+
+    .button_text {
+        font-size: 1.125rem;
     }
 
     /*팝업*/
@@ -346,6 +407,26 @@
 
 /*************************** 768px - 아이패드 *************************/
 @media all and (max-width:768px) {
+    .header_logo {
+        width: 13vmin;
+    }
+
+    .menuBox_logo {
+        top: 5%;
+    }
+
+    .menuBox_logo img {
+        width: 15vmin;
+    }
+
+    .toggle.active {
+        margin-top: 2%;
+    }
+
+    .toggle.active span {
+        width: 40px;
+    }
+
     #ban.rbx::before {
         padding-top: 70%;
     }
@@ -354,20 +435,17 @@
         margin: 0 12%;
     }
 
+    /*매거진*/
     #cont_1.rbx::before {
         padding-top: 100%;
     }
 
     #cont_1 .fbx .col-3 {
-        padding: 0 3%;
         flex-basis: 42%;
     }
 
-    #cont_2.rbx::before {
-        padding-top: 120%;
-    }
-
-    .btn_show p {
+    .btn_show p,
+    .magazine_left > p {
         font-size: 1.6rem;
     }
 
@@ -376,6 +454,45 @@
         margin-top: -4.5%;
     }
 
+    #cont_2.rbx::before {
+        padding-top: 120%;
+    }
+
+    .btn_show.magazine.c2btn {
+        left: 14%;
+    }
+
+    .btn_show.magazine:hover {
+        width: 276px;
+    }
+
+    /*pick 팝업*/
+    .pick_pop_1 {
+        width: 88vmin;
+        height: 39vh;
+    }
+
+    .popup_img {
+        width: 53vmin;
+    }
+
+    .popup_text {
+        width: 45vmin;
+        margin-left: 15px;
+    }
+
+    .popup_close {
+        width: 7vmin;
+        height: 7vmin;
+    }
+
+    .pick_text_area p {
+        font-size: 1.6rem;
+    }
+
+    .picTitle {
+        font-size: 1.45rem;
+    }
 
     /*리뷰*/
     #cont_4.rbx::before {
@@ -395,7 +512,7 @@
 
     /*푸터*/
     .footer_logo {
-        width: 12vmin;
+        width: 13vmin;
     }
 
     #footer.rbx::before {
@@ -406,6 +523,19 @@
         font-size: 1rem;
         font-weight: 600;
     }
+
+    #footer .fbx .col-3 h2 {
+        font-size: 1.3rem;
+    }
+
+    #footer .fbx .col-3 li,
+    #footer .fbx .col-3 a {
+        font-size: 1.125rem;
+    }
+
+    .news_input {
+        font-size: 1.1rem;
+    }
 }
 
 /*************************** 480px - 아이패드 *************************/
@@ -414,8 +544,55 @@
         font-size: 15px;
     }
 
+    .header,
+    #header [class*=col-] {
+        height: 70px;
+    }
+
+    .page.ban {
+        padding-top: 70px;
+    }
+
+    .header_logo {
+        width: 19vmin;
+    }
+
+    .toggle {
+        top: 53%;
+    }
+
+    .toggle span {
+        width: 25px;
+        height: 2px;
+    }
+
+    .toggle.active span {
+        width: 30px;
+    }
+
+    .toggle.active span:nth-child(1),
+    .toggle.active span:nth-child(3) {
+        margin-bottom: -2px;
+    }
+
+    /*메뉴팝업*/
+    .menuBox_logo img {
+        width: 25vmin;
+    }
+
+    .menuBox_gnb li {
+        line-height: 23vmin;
+    }
+
+    .menuBox_gnb a {
+        font-size: 12vmin;
+    }
+
+
+    /*배너*/
+
     #ban.rbx::before {
-        padding-top: 80vh;
+        padding-top: 85vh;
     }
 
     .ban_line {
@@ -426,26 +603,14 @@
         margin: -6% auto;
     }
 
-    /*
-
-    #cont_1.rbx::before {
-        padding-top: 100vh;
-    }
-    
-    .cont_1 .fbx{
-        flex-wrap: wrap;
+    .mapad {
+        padding-top: 0;
     }
 
-    #cont_1 .fbx .col-3, #cont_1 .fbx .col-9 {
-        flex-basis: 100vw;
-    }
-    #cont_1 .fbx .col-9 {
-        height: 50vh;
-    }
-*/
+
     /*매거진*/
     .cont_1 {
-        margin-top: 30%;
+        padding-top: 10%;
     }
 
     #cont_1 .fbx .col-3 {
@@ -454,13 +619,19 @@
     }
 
     #cont_1.rbx::before {
-        padding-top: 120vh;
+        padding-top: 100vh;
     }
 
-    .magazine_left h3 {
+    .magazine_left {
+        margin-top: -5%;
+        margin-left: 1%;
+    }
+
+    .magazine_left h3,
+    .pick_text {
         height: auto;
         font-size: 2.3rem;
-        line-height: 80px;
+        line-height: 60px;
     }
 
     .magazine_left > h3::after {
@@ -475,7 +646,7 @@
     .magazine_left > p {
         padding-bottom: 0;
         padding-top: 0;
-        font-size: 1.15rem;
+        font-size: 1.2rem;
     }
 
     .magazine_img .swiper-slide {
@@ -498,11 +669,15 @@
     .btn_show.magazine.mob {
         display: block;
         margin: 0 1.4%;
-/*        margin-left: 4vmin;*/
+        /*        margin-left: 4vmin;*/
     }
 
 
     /*brunch*/
+    .cont_2 {
+        margin-top: -2.5%;
+    }
+
     #cont_2.rbx::before {
         padding-top: 90vh;
     }
@@ -539,8 +714,14 @@
     #cont_3.rbx::before {
         padding-top: 300vh;
     }
-    .cont_3{
-        margin-top: 30%;
+
+    .cont_3 {
+        margin-top: 15%;
+        padding-top: 5%;
+    }
+
+    #cont_3 {
+        margin-top: -10%;
     }
 
     .picBox {
@@ -563,6 +744,7 @@
     .pick_text {
         font-size: 2.3rem;
         height: auto;
+        padding-bottom: 0;
     }
 
     .pick_text::after {
@@ -570,7 +752,7 @@
     }
 
     .pick_text_area p {
-        font-size: 1.15rem;
+        font-size: 1.2rem;
         line-height: 2rem;
         padding-top: 0;
     }
@@ -580,9 +762,18 @@
     }
 
     .picbtn_area {
-        left: -15.5%;
+        left: -11%;
         margin-top: 2%;
     }
+
+    .btn_show.magazine.c3btn:hover {
+        width: 220px;
+    }
+    
+    .btn_show img{
+        left: 23px;
+    }
+
 
     /*리뷰*/
     #cont_4.rbx::before {
@@ -595,7 +786,7 @@
 
     .c4tit {
         padding-top: 8%;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
 
     .review_list .swiper-slide {
@@ -604,7 +795,7 @@
 
     /*푸터*/
     #footer.rbx::before {
-        padding-top: 110vh;
+        padding-top: 95vh;
     }
 
     .footer .fbx {
@@ -622,6 +813,13 @@
         left: 0;
     }
 
+    .footer_list .col-3.f1h2:nth-child(3){
+        height: 22vw;
+    }
+    .footer_list .col-3.f1h2:nth-child(4){
+        height: 23vw;
+    }
+    
     #footer .fbx .col-3 {
         flex-basis: auto;
         padding: 0;
@@ -639,7 +837,7 @@
     }
 
     .f1h2 {
-        height: 32vw;
+        height: 28vw;
     }
 
     .sns .container {
