@@ -804,12 +804,12 @@
     .popup_text {
         width: 83vmin;
         margin-left: 0;
-        margin-top: 3%;
+        margin-top: 5%;
     }
 
     .popup_text li {
-        height: 11vmin;
-        line-height: 11vmin;
+        height: 12vmin;
+        line-height: 12vmin;
     }
 
     .place_btn {
