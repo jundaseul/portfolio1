@@ -769,10 +769,66 @@
     .btn_show.magazine.c3btn:hover {
         width: 220px;
     }
-    
-    .btn_show img{
+
+    .btn_show img {
         left: 23px;
     }
+
+    /*팝업*/
+    .pick_pop_1 {
+        width: 89vmin;
+        height: 70vh;
+        padding: 6% 3%;
+        top: 55%;
+    }
+
+    .popup_bottom {
+        flex-direction: column;
+        margin-top: 6%;
+    }
+
+    .popup_top h4 {
+        height: 40px;
+        font-size: 1.6rem;
+    }
+
+    .popup_img {
+        width: 83vmin;
+        height: 43vmin;
+    }
+
+    .popup_btn img {
+        width: 10vmin;
+    }
+
+    .popup_text {
+        width: 83vmin;
+        margin-left: 0;
+        margin-top: 3%;
+    }
+
+    .popup_text li {
+        height: 11vmin;
+        line-height: 11vmin;
+    }
+
+    .place_btn {
+        width: 4vmin;
+    }
+
+    .popup_top p a {
+        font-size: 0.9rem;
+        display: inline;
+    }
+
+    .popup_close {
+        width: 9vmin;
+        height: 9vmin;
+        right: -15px;
+    }
+
+
+
 
 
     /*리뷰*/
@@ -792,6 +848,7 @@
     .review_list .swiper-slide {
         height: 41vh;
     }
+
 
     /*푸터*/
     #footer.rbx::before {
@@ -813,13 +870,6 @@
         left: 0;
     }
 
-    .footer_list .col-3.f1h2:nth-child(3){
-        height: 22vw;
-    }
-    .footer_list .col-3.f1h2:nth-child(4){
-        height: 23vw;
-    }
-    
     #footer .fbx .col-3 {
         flex-basis: auto;
         padding: 0;
@@ -837,7 +887,16 @@
     }
 
     .f1h2 {
-        height: 28vw;
+        height: 30vw;
+    }
+
+
+    .footer_list .col-3.f1h2:nth-child(3) {
+        height: 24vw;
+    }
+
+    .footer_list .col-3.f1h2:nth-child(4) {
+        height: 25vw;
     }
 
     .sns .container {
@@ -850,6 +909,10 @@
 
     .sns .container li:last-child {
         margin-right: 0;
+    }
+
+    .news_input {
+        font-size: 1rem;
     }
 
 }
