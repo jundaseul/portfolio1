@@ -777,7 +777,7 @@
     /*팝업*/
     .pick_pop_1 {
         width: 89vmin;
-        height: 70vh;
+        height: 75vh;
         padding: 6% 3%;
         top: 55%;
     }
@@ -822,9 +822,10 @@
     }
 
     .popup_close {
-        width: 9vmin;
-        height: 9vmin;
-        right: -15px;
+        width: 10vmin;
+        height: 10vmin;
+/*        right: -15px;*/
+        right: 45%;
     }
 
 
