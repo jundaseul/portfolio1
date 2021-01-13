@@ -1,19 +1,54 @@
 /* main.js */
 
 $(function () { /////////// jQB //////////////
+    
+    //부드러운 스크롤
+    startSS();
+    
+
+    //모든 a태그 이동 막기
+    $('a[href="#"]').click(function (e) {
+        e.preventDefault();
+    });
+
+
+    // 햄버거 버튼
+    $('.toggle').click(function (e) {
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $(".menuBox").toggle("100");
+        //$(".menuBox").toggle("slow");
+        $('html, body').toggleClass('hidden');
+    });
+
+
+    $(".menuBox_gnb a, .menuBox_logo").click(function () {
+        $(".menuBox").hide(100);
+        $(".toggle").toggleClass('active');
+        $('html, body').toggleClass('hidden');
+    });
+
+
+    // 모달창 스크롤막기
+    //    $(document).on('click', '.menuBox', function () {
+    //        $.fn.fullpage.setAllowScrolling(false);
+    //        $.fn.fullpage.setKeyboardScrolling(false);
+    //    });
+    //
+    //    $(document).on('click', '.toggle', function () {
+    //        $.fn.fullpage.setAllowScrolling(true);
+    //        $.fn.fullpage.setKeyboardScrolling(true);
+    //    });
+
 
     // 스와이퍼 적용하기 ///
     var swiper = new Swiper('.swiper1', {
-        slidesPerView: 5,
+        slidesPerView: 2.7,
         spaceBetween: 20,
         loop: true,
         breakpoints: {
             // when window width is >= 320px
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 2,
-                loop:false
-            },
             // when window width is >= 320px
             768: {
                 slidesPerView: 4,
@@ -24,17 +59,21 @@ $(function () { /////////// jQB //////////////
                 spaceBetween: 50,
             },
             1280: {
+                slidesPerView: 5,
                 spaceBetween: 30,
             },
         }
     }); ///////// swiper //////////
 
     var swiper = new Swiper('.swiper2', {
-        slidesPerView: 8,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 0,
         loop: false,
         breakpoints: {
             // when window width is >= 320px
+            415: {
+                slidesPerView: 1,
+            },
             768: {
                 slidesPerView: 3,
                 spaceBetween: 30,
@@ -47,11 +86,13 @@ $(function () { /////////// jQB //////////////
                 slidesPerView: 7,
                 spaceBetween: 30,
             },
-            
+            1600: {
+                slidesPerView: 7,
+                spaceBetween: 20,
+            },
+
         }
     }); ///////// swiper //////////
-
-
 
 
 
@@ -60,10 +101,10 @@ $(function () { /////////// jQB //////////////
         e.preventDefault();
 
         var pid = $(this).attr("href");
-        console.log("아이디:" + pid);
+        //console.log("아이디:" + pid);
 
         var pgpos = $(pid).offset().top - 80;
-        console.log("top값:" + pgpos);
+        //console.log("top값:" + pgpos);
 
 
         $("html,body").stop().animate({
@@ -74,9 +115,24 @@ $(function () { /////////// jQB //////////////
             .addClass("on")
             .siblings()
             .removeClass("on");
-
-
     }); ////////// click ////////////
+
+
+    $(".menuBox_gnb a").click(function (e) {
+        e.preventDefault();
+
+        var mid = $(this).attr("href");
+        //console.log("아이디:" + mid);
+
+        var mpgpos = $(mid).offset().top - 130;
+
+        $("html,body").stop().animate({
+            scrollTop: mpgpos + "px"
+        }, 600, "easeInOutQuart");
+
+    });
+
+
 
 
     /*마우스 커서 변경*/

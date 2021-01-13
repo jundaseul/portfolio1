@@ -15,11 +15,13 @@
     <script src="js/swiper-bundle.min.js"></script>
     <!--마우스커서 변경-->
     <script src="https://cdn.jsdelivr.net/npm/kursor"></script>
+    <script src="js/smoothScroll20.js"></script>
     <script src="js/main.js"></script>
 
 </head>
 
 <body>
+
     <!--헤더영역-->
     <header class="header">
         <div class="inbox" id="header">
@@ -29,7 +31,6 @@
                 </li>
                 <li class="col-11 gbox">
                     <div class="gnbShow">
-                        <!--                        <img src="images/header_menu.png" alt="menu" class="header_menu">-->
                         <ul class="gnb">
                             <li><a href="#ban">Home</a></li>
                             <li><a href="#cont_1">Magazine</a></li>
@@ -38,7 +39,24 @@
                             <li><a href="#cont_4">Review</a></li>
                         </ul>
                     </div>
+                    <div class="toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </li>
+            </ul>
+        </div>
+        <!--메뉴 팝업-->
+        <div class="menuBox">
+            <a href="#" class="menuBox_logo">
+                <img src="images/logo.png" alt="메뉴팝업 로고">
+            </a>
+            <ul class="menuBox_gnb">
+                <li><a href="#cont_1">Magazine</a></li>
+                <li><a href="#cont_2">Brunch</a></li>
+                <li><a href="#cont_3">Pick</a></li>
+                <li><a href="#cont_4">Review</a></li>
             </ul>
         </div>
     </header>
@@ -50,34 +68,44 @@
                 <ul class="slide">
                     <li class="s1 zoom">
                         <!--view 버튼-->
-                        <div class="view_btn">
-                            <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
-                        </div>
+                        <!--
+                            <div class="view_btn">
+                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                            </div>
+        -->
 
                     </li>
                     <li class="s2 zoom">
                         <!--view 버튼-->
-                        <div class="view_btn">
-                            <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
-                        </div>
+                        <!--
+                            <div class="view_btn">
+                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                            </div>
+        -->
                     </li>
                     <li class="s3 zoom">
                         <!--view 버튼-->
-                        <div class="view_btn">
-                            <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
-                        </div>
+                        <!--
+                            <div class="view_btn">
+                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                            </div>
+        -->
                     </li>
                     <li class="s4 zoom">
                         <!--view 버튼-->
-                        <div class="view_btn">
-                            <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
-                        </div>
+                        <!--
+                            <div class="view_btn">
+                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                            </div>
+        -->
                     </li>
                     <li class="s5 zoom">
                         <!--view 버튼-->
-                        <div class="view_btn">
-                            <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
-                        </div>
+                        <!--
+                            <div class="view_btn">
+                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                            </div>
+        -->
                     </li>
                 </ul>
 
@@ -114,9 +142,9 @@
                     <div class="col-3">
                         <div class="magazine_left">
                             <h3>Magazine</h3>
-                            <p>매주 한번 스테이폴리오가<br>이야기하는 유니크한 공간!</p>
-                            <div class="btn_show magazine">
-                                <a href="#">
+                            <p>매주 한번 스테이폴리오가<br><span class="magazine_break">&nbsp;</span>이야기하는 유니크한 공간!</p>
+                            <div class="btn_show magazine mabtn">
+                                <a href="#" ;>
                                     <span>
                                         <img src="images/show_btn_arrow.png" alt="">
                                         <p>Show All Magazine</p>
@@ -131,35 +159,44 @@
                                 <li class="zoom swiper-slide sld1">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
-                                        <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                        <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
 
                                 <li class="zoom swiper-slide sld2">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
-                                        <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                        <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
                                 <li class="zoom swiper-slide sld3">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
-                                        <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                        <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
                                 <li class="zoom swiper-slide sld4">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
-                                        <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                        <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
                                 <li class="zoom swiper-slide sld5">
                                     <!--view 버튼-->
                                     <div class="view_btn magazine">
-                                        <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                        <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+
+                        <div class="btn_show magazine mob">
+                            <a href="#" ;>
+                                <span>
+                                    <img src="images/show_btn_arrow.png" alt="">
+                                    <p>Show All Magazine</p>
+                                </span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +213,7 @@
                     </li>
                     <li class="col-6">
                         <div class="btn_show magazine c2btn">
-                            <a href="#">
+                            <a href="#" ;>
                                 <span><img src="images/show_btn_arrow.png" alt="">
                                 </span>
                                 <p>Show All Brunch</p>
@@ -253,14 +290,14 @@
                     <h3 class="pick_text">
                         Pick
                     </h3>
-                    <p>갈팡질팡 어디로 갈까? STAY FOLIO의 Pick!</p>
+                    <p>갈팡질팡 어디로 갈까? STAY FOLIO의 <b>Pick!</b></p>
                 </div>
                 <ul class="fbx picBox">
                     <li class="col-4">
                         <div class="bgi zoom">
                             <!--view 버튼-->
                             <div class="view_btn magazine pick">
-                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                             </div>
                         </div>
                         <h4 class="picTitle">베트남, 데치우호텔</h4>
@@ -271,7 +308,7 @@
                         <div class="bgi zoom">
                             <!--view 버튼-->
                             <div class="view_btn magazine pick">
-                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                             </div>
                         </div>
                         <h4 class="picTitle">제주, 임진고택</h4>
@@ -280,7 +317,7 @@
                         <div class="bgi zoom">
                             <!--view 버튼-->
                             <div class="view_btn magazine pick">
-                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                             </div>
                         </div>
                         <h4 class="picTitle">남양주, 까사벽락재</h4>
@@ -289,7 +326,7 @@
                         <div class="bgi zoom">
                             <!--view 버튼-->
                             <div class="view_btn magazine pick">
-                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                             </div>
                         </div>
                         <h4 class="picTitle">경주, 어라운드빌리지</h4>
@@ -298,7 +335,7 @@
                         <div class="bgi zoom">
                             <!--view 버튼-->
                             <div class="view_btn magazine pick">
-                                <a href="#"><img src="images/view_btn.png" alt="view 버튼"></a>
+                                <a href="#" ;><img src="images/view_btn.png" alt="view 버튼"></a>
                             </div>
                         </div>
                         <h4 class="picTitle">종로, 스테이 데이오프</h4>
@@ -351,7 +388,7 @@
     <footer class="page footer">
         <div class="inbox rbx" id="footer">
             <div class="ibx">
-                <ul class="fbx">
+                <ul class="fbx footer_list">
                     <li class="col-12 f1h1">
                         <img src="images/logo.png" alt="하단로고" class="footer_logo">
                     </li>
@@ -396,12 +433,12 @@
                             <div class="newsletter_top">
                                 <h2>Newsletter</h2>
                                 <p>
-                
+
                                     <span class="news_arrow">
                                         <input type="text" class="news_input" placeholder="Please enter your email.">
                                         <a href="#"><img src="images/arrow_2.png" alt="화살표"></a>
                                     </span>
-                
+
                                 </p>
                             </div>
                             <!--<a href="#"><span>Subscribe</span></a>-->
@@ -414,7 +451,6 @@
             </div>
         </div>
     </footer>
-
 
 
 
