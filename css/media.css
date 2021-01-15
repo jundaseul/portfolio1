@@ -624,7 +624,7 @@
 
     .magazine_left {
         margin-top: -5%;
-        margin-left: 1%;
+        margin-left: 0;
     }
 
     .magazine_left h3,
@@ -646,7 +646,7 @@
     .magazine_left > p {
         padding-bottom: 0;
         padding-top: 0;
-        font-size: 1.2rem;
+        font-size: 1.16rem;
     }
 
     .magazine_img .swiper-slide {
@@ -853,7 +853,7 @@
 
     /*푸터*/
     #footer.rbx::before {
-        padding-top: 95vh;
+        padding-top: 98vh;
     }
 
     .footer .fbx {
