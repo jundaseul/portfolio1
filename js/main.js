@@ -50,6 +50,9 @@ $(function () { /////////// jQB //////////////
         breakpoints: {
             // when window width is >= 320px
             // when window width is >= 320px
+            415: {
+                slidesPerView: 1,
+            },
             768: {
                 slidesPerView: 4,
                 spaceBetween: 40,
@@ -110,6 +113,11 @@ $(function () { /////////// jQB //////////////
         $("html,body").stop().animate({
             scrollTop: pgpos + "px"
         }, 600, "easeInOutQuart");
+        
+        
+        // 위치이동값을 전역포지션에 저장하기(씽크맞춤!)
+        pos = pgpos;
+
 
         $(this).parent()
             .addClass("on")
@@ -129,6 +137,10 @@ $(function () { /////////// jQB //////////////
         $("html,body").stop().animate({
             scrollTop: mpgpos + "px"
         }, 600, "easeInOutQuart");
+        
+        
+        // 위치이동값을 전역포지션에 저장하기(씽크맞춤!)
+        pos = mpgpos;
 
     });
 
@@ -231,6 +243,7 @@ $(function () { /////////// jQB //////////////
     var autoCall = function () {
         // console.log("자동넘김!");
 
+        
         // 4초간격으로 슬라이드함수 호출
         autoI = setInterval(function () {
             goSlide(1);
@@ -334,7 +347,7 @@ $(function () { /////////// jQB //////////////
     console.log("슬라이드개수:" + scnt);
     /////////////////////////////////
 
-    var goSlide = function (dir) {
+    var goSlide2 = function (dir) {
 
         //console.log("광클금지상태:" + sprot);
 
@@ -382,7 +395,7 @@ $(function () { /////////// jQB //////////////
         } // else //////////////////
 
 
-    }; //////////////// goSlide함수 /////////////////////
+    }; //////////////// goSlide2함수 /////////////////////
     ////////////////////////////////////////////////////
 
 
@@ -396,7 +409,7 @@ $(function () { /////////// jQB //////////////
 
         // 4초간격으로 슬라이드함수 호출
         autoI = setInterval(function () {
-            goSlide(1);
+            goSlide2(1);
         }, 4000); /////// 인터발함수 /////////        
 
     }; //////////////// autoCall 함수 /////////////////////
@@ -436,7 +449,7 @@ $(function () { /////////// jQB //////////////
         clearAuto();
 
         //슬라이드 이동함수 호출!
-        goSlide(1); // 오른쪽 전달값은 1
+        goSlide2(1); // 오른쪽 전달값은 1
 
     }); /////// click ///////////
 
@@ -449,7 +462,7 @@ $(function () { /////////// jQB //////////////
         clearAuto();
 
         //슬라이드 이동함수 호출!
-        goSlide(0); // 왼쪽 전달값은 0
+        goSlide2(0); // 왼쪽 전달값은 0
 
     }); /////// click ///////////
 
