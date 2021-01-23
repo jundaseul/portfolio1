@@ -639,6 +639,7 @@
     }
 
     .cont_1 .fbx {
+        width: 100%;
         flex-wrap: wrap;
         height: auto;
     }
