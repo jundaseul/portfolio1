@@ -52,7 +52,7 @@ $(function () { /////////// jQB //////////////
 
 
     // 스와이퍼 적용하기 ///
-    var swiper = new Swiper('.swiper1', {
+    var swiperFirst = new Swiper('.swiper1', {
         slidesPerView: 2.7,
         spaceBetween: 20,
         loop: true,
