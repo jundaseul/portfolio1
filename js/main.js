@@ -1,6 +1,15 @@
 /* main.js */
+var mob = 0;
+if($(window).width()<500) mob=1;
+console.log("모바일:"+mob)
 
 $(function () { /////////// jQB //////////////
+    
+    // 모바일일때
+    if(mob){
+        $(".magazine_img li").removeClass("zoom");
+    }//// if //////////////
+    
     
     //부드러운 스크롤
     startSS();
