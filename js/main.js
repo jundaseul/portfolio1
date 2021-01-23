@@ -51,7 +51,7 @@ $(function () { /////////// jQB //////////////
             // when window width is >= 320px
             // when window width is >= 320px
             415: {
-                slidesPerView: 2.7,
+                slidesPerView: 1,
             },
             768: {
                 slidesPerView: 4,
