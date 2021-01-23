@@ -638,10 +638,6 @@
         display: none;
     }
     
-    #cont_1 .fbx .col-9 {
-        flex-basis: 100%;
-    }
-
     .cont_1 .fbx {
         flex-wrap: wrap;
         height: auto;
