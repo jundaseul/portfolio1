@@ -649,6 +649,10 @@
         font-size: 1.16rem;
     }
 
+    .magazine_img .swiper-wrapper {
+        width: 100vh !important;
+    }
+
     .magazine_img .swiper-slide {
         height: 65vh;
     }
