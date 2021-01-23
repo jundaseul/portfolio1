@@ -639,7 +639,7 @@
     }
 
     .cont_1 .fbx {
-        width: 100vw;
+        width: 100vw !important;
         flex-wrap: wrap;
         height: auto;
     }
