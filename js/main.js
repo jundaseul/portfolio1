@@ -44,7 +44,7 @@ $(function () { /////////// jQB //////////////
 
     // 스와이퍼 적용하기 ///
     var swiper = new Swiper('.swiper1', {
-        slidesPerView: 2.7,
+        slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         breakpoints: {
