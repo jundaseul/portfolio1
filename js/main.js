@@ -50,9 +50,6 @@ $(function () { /////////// jQB //////////////
         breakpoints: {
             // when window width is >= 320px
             // when window width is >= 320px
-            415: {
-                slidesPerView: 1,
-            },
             768: {
                 slidesPerView: 4,
                 spaceBetween: 40,
