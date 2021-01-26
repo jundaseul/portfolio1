@@ -637,7 +637,7 @@
     .magazine_left > h3::after {
         display: none;
     }
-    
+
     .cont_1 .fbx {
         flex-wrap: wrap;
         height: auto;
@@ -647,10 +647,6 @@
         padding-bottom: 0;
         padding-top: 0;
         font-size: 1.16rem;
-    }
-
-    .magazine_img .swiper-wrapper {
-        width: 100vh !important;
     }
 
     .magazine_img .swiper-slide {
