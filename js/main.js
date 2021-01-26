@@ -2,23 +2,20 @@
 
 
 var mob = 0;
-if($(window).width()<500) mob=1;
-console.log("모바일:"+mob)
+if ($(window).width() < 500) mob = 1;
+console.log("모바일:" + mob)
 
 $(function () { /////////// jQB //////////////
-    
+
     // 모바일일때
-    if(mob){
+    if (mob) {
         $(".magazine_img li").removeClass("zoom");
-        
-        
-        
-    }//// if //////////////
-    
-    
+    } //// if //////////////
+
+
     // 부드러운 스크롤
     startSS();
-    
+
 
     // 모든 a태그 이동 막기
     $('a[href="#"]').click(function (e) {
@@ -110,6 +107,8 @@ $(function () { /////////// jQB //////////////
 
 
 
+
+
     /*gnb 메뉴 슬라이드 이동 세팅*/
     $(".gnb a").click(function (e) {
         e.preventDefault();
@@ -124,8 +123,8 @@ $(function () { /////////// jQB //////////////
         $("html,body").stop().animate({
             scrollTop: pgpos + "px"
         }, 600, "easeInOutQuart");
-        
-        
+
+
         // 위치이동값을 전역포지션에 저장하기(씽크맞춤!)
         pos = pgpos;
 
@@ -148,8 +147,8 @@ $(function () { /////////// jQB //////////////
         $("html,body").stop().animate({
             scrollTop: mpgpos + "px"
         }, 600, "easeInOutQuart");
-        
-        
+
+
         // 위치이동값을 전역포지션에 저장하기(씽크맞춤!)
         pos = mpgpos;
 
@@ -254,7 +253,7 @@ $(function () { /////////// jQB //////////////
     var autoCall = function () {
         // console.log("자동넘김!");
 
-        
+
         // 4초간격으로 슬라이드함수 호출
         autoI = setInterval(function () {
             goSlide(1);
